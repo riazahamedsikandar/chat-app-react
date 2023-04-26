@@ -1,8 +1,8 @@
 import React from 'react';
 // Firebase deps
-import firebase from 'firebase/app';
-import 'firebase/auth';
-import 'firebase/firestore';
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/app';
+import 'firebase/compat/firestore';
 // Hooks
 import { useAuthState, useDarkMode } from './hooks';
 // Components
