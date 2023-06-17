@@ -10,9 +10,10 @@ const firebaseConfig = {
     storageBucket: "chat-ui-d2db7.appspot.com",
     messagingSenderId: "177510260547",
     appId: "1:177510260547:web:8dff7a7d69efeadc61d9f6"
-  };
- 
-export const app = initializeApp(firebaseConfig);
-export const auth = getAuth();
-export const storage = getStorage();
-export const db = getFirestore()
+};
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const storage = getStorage(app);
+const db = getFirestore(app);
+
+export { app, auth, storage, db };
